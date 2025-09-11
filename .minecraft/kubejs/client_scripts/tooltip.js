@@ -107,6 +107,10 @@ ItemEvents.tooltip(event => {
         text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
         text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
     })
+    event.addAdvanced('gtceu:adv_processing_plant', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
+    })
 
 
 })

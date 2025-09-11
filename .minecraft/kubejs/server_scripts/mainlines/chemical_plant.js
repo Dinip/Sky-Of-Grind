@@ -161,8 +161,7 @@ ServerEvents.recipes(event => {
         .notConsumable('kubejs:chemical_tier_four')
         .itemInputs('30x gtceu:uraninite_dust')
         .inputFluids('gtceu:fluorine 60000', 'gtceu:hydrogen 40000')
-        .itemOutputsRanged('gtceu:uranium_235_dust',1,3)
-        .itemOutputsRanged('gtceu:uranium_dust',9,11)
+        .itemOutputs('gtceu:uranium_235_dust', '10x gtceu:uranium_dust')
         .outputFluids('gtceu:fluorine 50000', 'gtceu:hydrogen 20000')
         .duration(500)
         .EUt(GTValues.VA[GTValues.UHV]);
@@ -190,4 +189,13 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:silicone_rubber 16000')
         .duration(20*20)
         .EUt(GTValues.VA[GTValues.UV]);
+
+        event.recipes.gtceu.chemical_plant('advanced_sodium_persulfate')
+        .notConsumable('kubejs:chemical_tier_three')
+        .itemInputs('32x gtceu:sulfur_dust','64x gtceu:salt_dust')
+        .inputFluids('minecraft:water 256000')
+        .outputFluids('gtceu:sodium_persulfate 16000','gtceu:hydrochloric_acid 32000','gtceu:hydrogen 32000')
+        .duration(20*10)
+        .EUt(GTValues.VA[GTValues.UHV]);    
+
 })

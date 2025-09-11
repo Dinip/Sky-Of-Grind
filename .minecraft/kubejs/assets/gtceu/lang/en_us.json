@@ -234,6 +234,7 @@
     "block.gtceu.nebular_plasma_nexus": "Nebular Plasma Nexus",
     "gtceu.plasma_nexus": "Plasma Nexus",
     "block.gtceu.processing_plant": "Ore Processing Plant",
+    "block.gtceu.adv_processing_plant": "Advanced Ore Processing Plant",
     "gtceu.processing_plant": "Ore Processing Plant",
     "block.gtceu.chemical_plant": "Chemical Plant",
     "gtceu.chemical_plant": "Chemical Plant",
@@ -282,7 +283,7 @@
 
     "gtceu.jei.ore_vein.glacio_chaos": "Chaos Vein Glacio",
     "gtceu.jei.ore_vein.glacio_pitchblend": "Pitchblend Vein Glacio",
-    "gtceu.jei.ore_vein.glacio_rutile": "Rutile Vein Glacio"
+    "gtceu.jei.ore_vein.glacio_rutile": "Rutile Vein Glacio",
     
 	"block.gtceu.processor_printing_factory_lv": "Low Voltage Processor Printing Factory",
     "gtceu.processor_printing_factory_lv": "Low Voltage Processor Printing Factory",
