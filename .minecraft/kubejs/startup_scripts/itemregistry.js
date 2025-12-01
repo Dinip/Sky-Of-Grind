@@ -27,10 +27,11 @@ sog.create('cosmic_processor').maxStackSize(64).displayName('Cosmic Processor').
 sog.create('cosmic_processor_assembly').maxStackSize(64).displayName('Cosmic Processor Assembly').tooltip('§0UEV-Tier Circuit')
 sog.create('cosmic_processor_computer').maxStackSize(64).displayName('Cosmic Processor Computer').tooltip('§0UIV-Tier Circuit')
 sog.create('cosmic_processor_mainframe').maxStackSize(64).displayName('Cosmic Processor Mainframe').tooltip('§0UXV-Tier Circuit')
-sog.create('space_time_processor').maxStackSize(64).displayName('Space Time Processor').tooltip('§bUEV-Tier Circuit')
-sog.create('space_time_processor_assembly').maxStackSize(64).displayName('Space Time Processor Assembly').tooltip('§bUIV-Tier Circuit')
-sog.create('space_time_processor_computer').maxStackSize(64).displayName('Space Time Processor Computer').tooltip('§bUXV-Tier Circuit')
-sog.create('space_time_processor_mainframe').maxStackSize(64).displayName('Space Time Processor Mainframe').tooltip('§bOPV-Tier Circuit')
+sog.create('chrono_infinity_processor').maxStackSize(64).displayName('Chrono-Infinity Processor').tooltip('§bUEV-Tier Circuit')
+sog.create('chrono_infinity_processor_assembly').maxStackSize(64).displayName('Chrono-Infinity Processor Assembly').tooltip('§bUIV-Tier Circuit')
+sog.create('chrono_infinity_processor_computer').maxStackSize(64).displayName('Chrono-Infinity Processor Computer').tooltip('§bUXV-Tier Circuit')
+sog.create('chrono_infinity_processor_mainframe').maxStackSize(64).displayName('Chrono-Infinity Processor Mainframe').tooltip('§bOPV-Tier Circuit')
+sog.create('chrono_infinity_printed_circuit_board').maxStackSize(64).displayName('Chrono-Infinity Printed Circuit Board')
 sog.create('dimensional_circuit_board').maxStackSize(64).displayName('Dimensional Circuit Board').rarity('epic')
 sog.create('dimensional_printed_circuit_board').maxStackSize(64).displayName('Dimensional Printed Circuit Board').rarity('epic')
 sog.create('dimensional_processor').maxStackSize(64).displayName('Dimensional Processor').tooltip('§f§lUIV-Tier Circuit').rarity('epic')
@@ -123,7 +124,8 @@ sog.create('stellar_matter_nanites').maxStackSize(64).displayName('Stellar Matte
 sog.create('universium_nanites').maxStackSize(64).displayName('Universium Nanites')
 // Credits
 sog.create('atomically_compressed_neutronium_credit').maxStackSize(64).displayName('Atomically Compressed Neutronium Credit').texture('kubejs:item/atomically_compressed_neutronium_credit')
-
+// Exotic Condensate
+sog.create('quantum_stretched_lattice').maxStackSize(64).displayName('Quantum Stretched Lattice')
 
 const data = ["cosmic", "elementary", "eternity", "plasma", "singularity", "spacetime", "universe"]
         data.forEach((data) => {
