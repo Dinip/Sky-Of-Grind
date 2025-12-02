@@ -228,7 +228,7 @@ event.recipes.gtceu.rock_crusher('red_granite')
 
 event.recipes.gtceu.rock_crusher('marble')
     .notConsumable('gtceu:marble')
-    .itemOutputs('gtceu:marblee')
+    .itemOutputs('gtceu:marble')
     .duration(16)
     .EUt(GTValues.VA[GTValues.HV]);
 

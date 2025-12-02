@@ -81,38 +81,46 @@ const advanced_fluids = {
   }
 
 const adv_processing_plant = (event, materialObj) => {
-    
-    event.recipes.gtceu.adv_processing_plant(`${materialObj.material}`)
+    let recipe = event.recipes.gtceu.adv_processing_plant(`${materialObj.material}`)
         .circuit(1)
         .itemInputs(raw_ore(materialObj.material, 10000))
         .inputFluids(advanced_fluids.acid)
-        .itemOutputs(
-                    advanced_dust(materialObj.material, 15000),
-                    advanced_dust(materialObj.secondary, 2000),
-                    advanced_dust(materialObj.tertiary, 1000),
-                    advanced_dust(materialObj.quaternary, 1000)
-            )  
+        .itemOutputs(advanced_dust(materialObj.material, 15000))
         .duration(20*60)
-        .EUt(GTValues.VHA[GTValues.UHV])
+        .EUt(GTValues.VHA[GTValues.UHV]);
+    
+    if (materialObj.secondary) {
+        recipe.itemOutputs(advanced_dust(materialObj.secondary, 2000));
+    }
+    if (materialObj.tertiary) {
+        recipe.itemOutputs(advanced_dust(materialObj.tertiary, 1000));
+    }
+    if (materialObj.quaternary) {
+        recipe.itemOutputs(advanced_dust(materialObj.quaternary, 1000));
+    }
 }
 
-/*
- * Final form of 1-step ore processing.
-*/
+
+// Final form of 1-step ore processing.
+
 const adv_plant_ore_processing = (event, materialObj) => {
-    event.recipes.gtceu.adv_processing_plant(`${materialObj.material}`)
+    let recipe = event.recipes.gtceu.adv_processing_plant(`${materialObj.material}`)
         .circuit(1)
         .itemInputs(raw_ore(materialObj.material, 100))
         .inputFluids(advanced_fluids.acidx5)
-        .itemOutputs(
-                    advanced_dust(materialObj.material, 120),
-                    advanced_dust(materialObj.secondary, 50),
-                    advanced_dust(materialObj.tertiary, 30),
-                    advanced_dust(materialObj.quaternary, 20),
-                    advanced_dust(materialObj.quinary, 10)
-        )
+        .itemOutputs(advanced_dust(materialObj.material, 120))
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UEV]);
+
+    if (materialObj.secondary) {
+        recipe.itemOutputs(advanced_dust(materialObj.secondary, 2000));
+    }
+    if (materialObj.tertiary) {
+        recipe.itemOutputs(advanced_dust(materialObj.tertiary, 1000));
+    }
+    if (materialObj.quaternary) {
+        recipe.itemOutputs(advanced_dust(materialObj.quaternary, 1000));
+    }
 }
 
 // Gem processing
@@ -161,7 +169,7 @@ const advgemproc = (event, materialObj) => {
         .EUt(GTValues.VA[GTValues.UHV]);
 };
 
-/* Final Product */
+// Final Product 
 
 ServerEvents.recipes(event => {
 	// Iterate over each tier and processable item and register the recipes
@@ -247,12 +255,9 @@ ServerEvents.recipes(event => {
     )
     .inputFluids(
         'gtceu:condensed_star_matter 1256',
-        'gtceu:silicone_rubber 2152',
-        'gtceu:styrene_butadiene_rubber 2152',
         'gtceu:soldering_alloy 2152'
     )
     .itemOutputs('gtceu:adv_processing_plant')
     .duration(200)
     .EUt(GTValues.VA[GTValues.UHV]);
-
 });
