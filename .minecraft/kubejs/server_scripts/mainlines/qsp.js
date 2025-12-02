@@ -134,6 +134,13 @@ event.recipes.gtceu.qsp('hrsoc')
     .duration(6000)
     .EUt(GTValues.VA[GTValues.UEV]);
 
+    event.recipes.gtceu.qsp('fusion_helium_plasma_qsp')
+    .notConsumable('kubejs:fusion_projector_module')
+    .inputFluids(Fluid.of('gtceu:deuterium', 125))
+    .inputFluids(Fluid.of('gtceu:tritium', 125))
+    .outputFluids(Fluid.of('gtceu:helium_plasma 125'))
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.LuV]); // custom by dinip
     event.recipes.gtceu.qsp('fusion_europium_qsp')
     .notConsumable('kubejs:fusion_projector_module')
     .inputFluids(Fluid.of('gtceu:neodymium', 16))
