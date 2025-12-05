@@ -69,7 +69,7 @@ ItemEvents.tooltip(event => {
         text.add(2, Text.translatable('gtceu.multiblock.lss.description'))
     })
     event.addAdvanced('gtceu:singularity_data_confinement', (item, adv, text) => {
-        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.laser_input.description'))
     })
 	event.addAdvanced('gtceu:processor_printing_factory_lv', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))

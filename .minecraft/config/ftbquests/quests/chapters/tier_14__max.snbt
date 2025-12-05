@@ -1,11 +1,11 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "diamond"
+	default_quest_shape: "square"
 	filename: "tier_14__max"
 	group: "6B3EFCC5BFD49997"
-	icon: "avaritia:infinity_ingot"
+	icon: "gtceu:pure_cosmic_matter_ingot"
 	id: "004423CBAE120A16"
-	order_index: 14
+	order_index: 15
 	quest_links: [
 		{
 			id: "058F3102B6CC55C1"
@@ -24,20 +24,6 @@
 			linked_quest: "27691D0A469C4AF9"
 			x: 8.0d
 			y: 1.0d
-		}
-		{
-			id: "3D39C164B8D0999B"
-			linked_quest: "721022894AAF65E9"
-			shape: "none"
-			size: 2.0d
-			x: 8.0d
-			y: -4.0d
-		}
-		{
-			id: "41DE32D7B1243557"
-			linked_quest: "765ADE14F741C5E5"
-			x: 6.0d
-			y: -5.5d
 		}
 	]
 	quests: [
@@ -71,7 +57,7 @@
 				"3E2B822216A05E3E"
 			]
 			id: "19D1E837A7CA3313"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "7407A94A2E63B59D"
 				item: "avaritia:infinity_ingot"
@@ -82,6 +68,11 @@
 		}
 		{
 			dependencies: ["19D1E837A7CA3313"]
+			description: [
+				"This is a huge milestone, since apart from doing normal atomic forge and ebf recipes it also has a forge module."
+				""
+				"The new forge recipes allow for an easier way of getting molten space time  and unlocks a new step for progression, cosmic matter residue."
+			]
 			id: "1724853A35EE60D9"
 			subtitle: "Finally a better EBF."
 			tasks: [{
@@ -89,22 +80,8 @@
 				item: "gtceu:reinforced_atomicforge"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"4E8E8EA3099ED38C"
-				"1724853A35EE60D9"
-			]
-			id: "0D0F01942BEE582F"
-			tasks: [{
-				id: "0740C6D4D7C92D17"
-				item: "avaritia:extreme_anvil"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -2.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0BAA4873EF207963"]
@@ -152,114 +129,13 @@
 				"27691D0A469C4AF9"
 			]
 			id: "4E8E8EA3099ED38C"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "29586BEA618B9BDF"
 				item: "gtceu:space_time_ingot"
 				type: "item"
 			}]
 			x: 9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["04F7D3ACF20599F7"]
-			icon: "avaritia:infinity_sword"
-			id: "0EEC8806D9B7E7D4"
-			tasks: [
-				{
-					id: "16C2DDC8DB2F3CB0"
-					item: "avaritia:infinity_helmet"
-					type: "item"
-				}
-				{
-					id: "658B92015BEC9603"
-					item: "avaritia:infinity_chestplate"
-					type: "item"
-				}
-				{
-					id: "136FCAED631FB078"
-					item: "avaritia:infinity_pants"
-					type: "item"
-				}
-				{
-					id: "1F122BDEA1A62051"
-					item: "avaritia:infinity_boots"
-					type: "item"
-				}
-				{
-					id: "0EE8E5A335D8DE35"
-					item: "avaritia:infinity_sword"
-					type: "item"
-				}
-				{
-					id: "461E93EE961A9BE6"
-					item: "avaritia:infinity_bow"
-					type: "item"
-				}
-				{
-					id: "61AEF21215E6154B"
-					item: "avaritia:infinity_crossbow"
-					type: "item"
-				}
-			]
-			title: "The Suit to Heaven"
-			x: 10.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["48D9A5E238C5F6C5"]
-			id: "7077A1AECE496480"
-			tasks: [{
-				id: "6F32172ED6B9DE19"
-				item: "kubejs:dimensional_processor_mainframe"
-				type: "item"
-			}]
-			title: "The Final Frontier"
-			x: 5.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["1724853A35EE60D9"]
-			hide_dependency_lines: true
-			icon: "kubejs:eternity_nanites"
-			icon_scale: 1.5d
-			id: "7F0C919A5E9E77BF"
-			shape: "none"
-			tasks: [
-				{
-					id: "56AA337828AEF84F"
-					item: "kubejs:cosmic_matter_nanites"
-					type: "item"
-				}
-				{
-					id: "188D4EA6FF1B5B0F"
-					item: "kubejs:universium_nanites"
-					type: "item"
-				}
-				{
-					id: "1F55CE853400CFB4"
-					item: "kubejs:stellar_matter_nanites"
-					type: "item"
-				}
-				{
-					id: "7D1730167B42FC7D"
-					item: "kubejs:eternity_nanites"
-					type: "item"
-				}
-			]
-			title: "An Error in Reality"
-			x: 8.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["19D1E837A7CA3313"]
-			id: "48D9A5E238C5F6C5"
-			tasks: [{
-				id: "4738CDB2D4956329"
-				item: "kubejs:dimensional_processor"
-				type: "item"
-			}]
-			x: 5.5d
 			y: 0.0d
 		}
 		{
@@ -302,20 +178,8 @@
 				item: "gtceu:chaotic_fusion_injector"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["7F0C919A5E9E77BF"]
-			icon_scale: 2.0d
-			id: "765ADE14F741C5E5"
-			tasks: [{
-				id: "4E88A56846CF5A6A"
-				item: "avaritia:enhancement_core"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -5.5d
 		}
 		{
 			dependencies: ["3C7786F4A3C00CAE"]
@@ -327,27 +191,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 4.5d
-		}
-		{
-			id: "203EDAF44CA6A68F"
-			tasks: [{
-				id: "44B935941ED2D099"
-				item: "gtceu:creative_energy"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -3.0d
-		}
-		{
-			id: "21DB66835BD2EC43"
-			tasks: [{
-				id: "4FCA148EE4F4733F"
-				item: "gtceu:creative_computation_provider"
-				type: "item"
-			}]
-			x: 9.5d
-			y: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4E8E8EA3099ED38C"]
@@ -414,7 +258,52 @@
 			x: 9.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["04F7D3ACF20599F7"]
+			icon: "avaritia:infinity_sword"
+			id: "0EEC8806D9B7E7D4"
+			tasks: [
+				{
+					id: "16C2DDC8DB2F3CB0"
+					item: "avaritia:infinity_helmet"
+					type: "item"
+				}
+				{
+					id: "658B92015BEC9603"
+					item: "avaritia:infinity_chestplate"
+					type: "item"
+				}
+				{
+					id: "136FCAED631FB078"
+					item: "avaritia:infinity_pants"
+					type: "item"
+				}
+				{
+					id: "1F122BDEA1A62051"
+					item: "avaritia:infinity_boots"
+					type: "item"
+				}
+				{
+					id: "0EE8E5A335D8DE35"
+					item: "avaritia:infinity_sword"
+					type: "item"
+				}
+				{
+					id: "461E93EE961A9BE6"
+					item: "avaritia:infinity_bow"
+					type: "item"
+				}
+				{
+					id: "61AEF21215E6154B"
+					item: "avaritia:infinity_crossbow"
+					type: "item"
+				}
+			]
+			title: "The Suit to Heaven"
+			x: 13.0d
+			y: 0.0d
+		}
 	]
-	subtitle: ["Maximum Voltage"]
-	title: "&#ff0000&l  Endgame Goals"
+	subtitle: ["Ultra Extreme Voltage"]
+	title: "&#FFFFFF&lT&#EDEDED&li&#DBDBDB&le&#C9C9C9&lr &#A4A4A4&l1&#929292&l2 &#6E6E6E&l- &#494949&lU&#373737&lX&#252525&lV"
 }
